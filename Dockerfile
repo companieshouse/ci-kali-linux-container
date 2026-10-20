@@ -2,4 +2,6 @@
 # See https://hub.docker.com/r/kalilinux/kali-rolling/tags
 FROM kalilinux/kali-last-release:latest@sha256:932dfbc788a8201afa8ef439ba376877375247b827344ff9141ab182d5fbd883
 
-RUN apt update && apt -y install kali-linux-headless && rm -rf /var/lib/apt/lists/*
+RUN apt update && apt -y install \
+    kali-linux-headless \
+    && rm -rf /var/lib/apt/lists/*
